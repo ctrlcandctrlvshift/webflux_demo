@@ -11,6 +11,6 @@ public class ListController {
     @GetMapping("/test")
     public Mono<String> testC(){
         log.info(Thread.currentThread().getName()+"   "+"this is webFlux");
-        return Mono.just("This is webFlux");
+        return Mono.just("This is webFlux,this is change");
     }
 }
